@@ -5,8 +5,12 @@ version 0.15.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Instalar node, y npm
 
-## Testing
+Instalar bower (npm install -g bower)
 
-Running `grunt test` will run the unit tests with karma.
+Ejecutar `npm install` para instalar modulos de node
+
+Ejecutar `bower install` para instalar componentes usados para el landing
+
+Para construir el proyecto ejecutar: gulp serve
