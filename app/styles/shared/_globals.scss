@@ -1,12 +1,32 @@
+html, body {
+	height: 100%;
+}
+
 body {
   font-family: $font-roboto;
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
 }
 
+hr {
+	margin: 1.5em 0;
+	border-top: 1px solid #99CCFF;
+}
+
+#content {
+	background: #fff url(../images/background.jpg) no-repeat center bottom;
+  padding-bottom: 220px;
+}
+
 // Paddings, margins...
 .pt-10 {
 	padding-top: 10px;
+}
+.pt-20 {
+	padding-top: 20px;
+}
+.pt-30 {
+	padding-top: 30px;
 }
 .mb-20 {
 	margin-bottom: 20px;
@@ -54,15 +74,37 @@ body {
 .bg-navy-blue {
   background-color: $navy-blue!important;
 }
+.bg-transparent-beige {
+  background-color: rgba(240, 241, 243, 0.8)!important;
+}
+
+.feature {
+	padding: 10px;
+	margin: 0 auto;
+	>.description {
+		padding: 5px;
+	}
+	p, h4 {
+		margin: 0;
+	}
+}
+
+.perfect-circle {
+	background: #ffffff url(../images/sony.jpg) no-repeat 35% 20%;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
 
 // Secciones
 section {
 	&.presentation {
+		padding-top: 100px;
 		position: relative;
 		min-height: 600px;
 		background: linear-gradient(rgba(0, 0, 0, .3), transparent), url(../images/home-main-pic.jpg) no-repeat scroll 0px 100% /cover;
 		background-position: center center;
-		padding-top: 100px;
 
 		h1 {
 			letter-spacing: 18px;
@@ -91,15 +133,13 @@ section {
 
 			>.feature {
 				display: inline-block;
-				padding: 10px;
 				width: 150px;
+				
 				border-right: 1px solid $bright-gray;
 				&:last-child {
 					border: 0;
 				}
-				p {
-					margin: 0;
-				}
+
 				@media screen and (min-width: 322px) and (max-width: 475px) {
 					&:nth-child(even) {
 						border: 0;
@@ -112,13 +152,20 @@ section {
 						border: 0;
 					}
 				}
-				>.description {
-					padding: 5px;
-				}
+				
 			}
 		}
-		button {
-			padding: 12px 42px;
+	}
+
+	&.travels {
+		.card {
+			padding: 25px;
+		}
+	}
+
+	&.conclusion {
+		.card {
+			padding: 35px;
 		}
 	}
 }

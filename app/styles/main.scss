@@ -6,10 +6,17 @@
 @import "vars/variables";
 
 // Componentes
-@import "components/header";
 @import "components/buttons";
 @import "components/dropdowns";
 @import "components/fonts";
+@import "components/cards";
+
+// Secciones
+@import "sections/header";
+@import "sections/footer";
 
 // Varios
 @import "shared/globals";
+
+// Paginas
+@import "pages/global";

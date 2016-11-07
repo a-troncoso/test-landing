@@ -2,6 +2,16 @@
 	border-radius: 0;
 	font-size: $font-size-base;
 
+	&.btn-lg {
+		padding: 12px 42px
+	}
+
+	&.btn-white {
+		background-color: $white;
+		color: $white;
+		border-color: $white;
+	}
+
 	&.btn-navy-blue {
 		background-color: $navy-blue;
 		color: $white
@@ -10,5 +20,19 @@
 	&.btn-transparent {
 		color: black;
     background-color: transparent;
+	}
+
+	&.btn-border {
+	  background-color: transparent;
+	  border-width: 1px;
+	  border-style: solid;
+
+	  &:hover,&:active,&.active,&:focus {
+	    background-color: transparent;
+	  }
+
+	  &.btn-white {
+	  	color: $white;
+	  }
 	}
 }

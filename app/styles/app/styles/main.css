@@ -1,4 +1,96 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:300,700|Ubuntu+Mono|Lato:300,400,700,300italic,400italic&subset=latin,latin-ext);
+.btn {
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.btn.btn-lg {
+  padding: 12px 42px;
+}
+
+.btn.btn-white {
+  background-color: #fff;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn.btn-navy-blue {
+  background-color: #01295C;
+  color: #fff;
+}
+
+.btn.btn-transparent {
+  color: black;
+  background-color: transparent;
+}
+
+.btn.btn-border {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.btn.btn-border:hover, .btn.btn-border:active, .btn.btn-border.active, .btn.btn-border:focus {
+  background-color: transparent;
+}
+
+.btn.btn-border.btn-white {
+  color: #fff;
+}
+
+.dropdown .login {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?fjelsz");
+  src: url("../fonts/icomoon.eot?fjelsz#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?fjelsz") format("truetype"), url("../fonts/icomoon.woff?fjelsz") format("woff"), url("../fonts/icomoon.svg?fjelsz#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-shopping-bag:before {
+  content: "\e902";
+}
+
+.icon-aircraft-take-off:before {
+  content: "\e901";
+}
+
+.icon-wallet:before {
+  content: "\e903";
+}
+
+.icon-world:before {
+  content: "\e900";
+}
+
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+
+.card {
+  padding: 25px 10px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card > ul {
+  margin: 10px 0;
+}
+
+.card > ul li {
+  margin: 0 0 15px 0;
+}
+
+.card button {
+  margin-top: 3em;
+}
+
 #custom-bootstrap-menu.navbar-default {
   background-color: #fff;
   border-width: 0;
@@ -41,40 +133,14 @@
   background-color: #fff;
 }
 
-.btn {
-  border-radius: 0;
-  font-size: 12px;
-}
-
-.btn.btn-marine-blue {
+.footer {
+  height: 250px;
   background-color: #01295C;
-  color: #fff;
+  padding: 30px;
 }
 
-.btn.btn-transparent {
-  color: black;
-  background-color: transparent;
-}
-
-.dropdown .login {
-  width: 300px;
-  padding: 10px 20px;
-}
-
-.icon-shopping-bag:before {
-  content: "\e902";
-}
-
-.icon-aircraft-take-off:before {
-  content: "\e901";
-}
-
-.icon-world:before {
-  content: "\e900";
-}
-
-.icon-briefcase:before {
-  content: "\e9ae";
+html, body {
+  height: 100%;
 }
 
 body {
@@ -83,8 +149,26 @@ body {
   font-weight: 400;
 }
 
+hr {
+  margin: 1.5em 0;
+  border-top: 1px solid #99CCFF;
+}
+
+#content {
+  background: #fff url(../images/background.jpg) no-repeat center bottom;
+  padding-bottom: 220px;
+}
+
 .pt-10 {
   padding-top: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
 }
 
 .mb-20 {
@@ -95,7 +179,7 @@ body {
   color: white !important;
 }
 
-.text-marine-blue {
+.text-navy-blue {
   color: #01295C !important;
 }
 
@@ -103,8 +187,58 @@ body {
   font-weight: 300 !important;
 }
 
+.text-xs {
+  font-size: 9px !important;
+}
+
+.text-sm {
+  font-size: 11px !important;
+}
+
+.text-md {
+  font-size: 16px !important;
+}
+
+.text-lg {
+  font-size: 23px !important;
+}
+
+.text-elg {
+  font-size: 36px !important;
+  line-height: 34px;
+}
+
 .bg-white {
   background-color: white !important;
+}
+
+.bg-navy-blue {
+  background-color: #01295C !important;
+}
+
+.bg-transparent-beige {
+  background-color: rgba(240, 241, 243, 0.8) !important;
+}
+
+.feature {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.feature > .description {
+  padding: 5px;
+}
+
+.feature p, .feature h4 {
+  margin: 0;
+}
+
+.perfect-circle {
+  background: #ffffff url(../images/sony.jpg) no-repeat 35% 20%;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
 }
 
 section.presentation {
@@ -130,14 +264,18 @@ section.presentation .rectangle {
 
 section.featured {
   margin-top: -25px;
+  margin-bottom: 15px;
   color: #01295C;
 }
 
 section.featured .features {
-  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 section.featured .features > .feature {
+  display: inline-block;
+  width: 150px;
   border-right: 1px solid #999999;
 }
 
@@ -145,7 +283,30 @@ section.featured .features > .feature:last-child {
   border: 0;
 }
 
-section.featured .features .feature {
-  display: inline-block;
-  padding: 10px;
+@media screen and (min-width: 322px) and (max-width: 475px) {
+  section.featured .features > .feature:nth-child(even) {
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  section.featured .features > .feature {
+    border: 0;
+    border-bottom: 1px solid #999999;
+  }
+  section.featured .features > .feature:last-child {
+    border: 0;
+  }
+}
+
+section.travels .card {
+  padding: 25px;
+}
+
+section.conclusion .card {
+  padding: 35px;
+}
+
+.page {
+  padding-top: 100px;
 }
