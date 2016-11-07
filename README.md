@@ -5,9 +5,7 @@ version 0.15.1.
 
 ## Build & development
 
-Instalar node, y npm
-
-Instalar bower (npm install -g bower)
+Segurarse de tener instalado node, npm, bower y gulp
 
 Ejecutar `npm install` para instalar modulos de node
 
