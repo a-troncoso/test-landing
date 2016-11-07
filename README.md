@@ -5,10 +5,10 @@ version 0.15.1.
 
 ## Build & development
 
-Segurarse de tener instalado node, npm, bower y gulp
+Asegurarse tener instalado node, npm, bower y gulp.
 
-Ejecutar `npm install` para instalar modulos de node
+Ejecutar `npm install` para instalar modulos de node.
 
-Ejecutar `bower install` para instalar componentes usados para el landing
+Ejecutar `bower install` para instalar componentes usados para el landing.
 
-Para construir el proyecto ejecutar: gulp serve
+Para construir el proyecto ejecutar: gulp serve.
