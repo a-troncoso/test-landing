@@ -1,0 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,700|Ubuntu+Mono|Lato:300,400,700,300italic,400italic&subset=latin,latin-ext);
+#custom-bootstrap-menu.navbar-default {
+  background-color: #fff;
+  border-width: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+  color: #333333;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav > li > a {
+  color: #333333;
+  background-color: #fff;
+  border-bottom: 4px solid #fff;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover, #custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
+  border-bottom: 4px solid #00AEEF;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a, #custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover, #custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: #00AEEF;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+  border-color: #00AEEF;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover, #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+  background-color: #00AEEF;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar:hover .icon-bar, #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar:focus .icon-bar {
+  background-color: #fff;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.btn.btn-marine-blue {
+  background-color: #01295C;
+  color: #fff;
+}
+
+.btn.btn-transparent {
+  color: black;
+  background-color: transparent;
+}
+
+.dropdown .login {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+.icon-shopping-bag:before {
+  content: "\e902";
+}
+
+.icon-aircraft-take-off:before {
+  content: "\e901";
+}
+
+.icon-world:before {
+  content: "\e900";
+}
+
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-marine-blue {
+  color: #01295C !important;
+}
+
+.text-light {
+  font-weight: 300 !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+section.presentation {
+  position: relative;
+  min-height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(../images/home-main-pic.jpg) no-repeat scroll 0px 100%/cover;
+  background-position: center center;
+  padding-top: 100px;
+}
+
+section.presentation h1 {
+  letter-spacing: 18px;
+}
+
+section.presentation .rectangle {
+  width: 240px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: black;
+  margin: 0 auto;
+  box-shadow: 6px 6px 12px -4px rgba(0, 0, 0, 0.87);
+}
+
+section.featured {
+  margin-top: -25px;
+  color: #01295C;
+}
+
+section.featured .features {
+  text-align: center;
+}
+
+section.featured .features > .feature {
+  border-right: 1px solid #999999;
+}
+
+section.featured .features > .feature:last-child {
+  border: 0;
+}
+
+section.featured .features .feature {
+  display: inline-block;
+  padding: 10px;
+}

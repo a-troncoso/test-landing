@@ -1,0 +1,46 @@
+#custom-bootstrap-menu {
+
+  &.navbar-default {
+    background-color: $white;
+    border-width: 0;
+    border-radius: 0;
+    margin: 0;
+
+    .navbar-brand {
+      color: $gray;
+    }
+
+    .navbar-nav {
+      > li {
+        > a {
+          color: $gray;
+          background-color: $white;
+          border-bottom: 4px solid $white;
+          &:hover, &:focus {
+            border-bottom: 4px solid $cyan;
+          }
+        }
+      }
+      > .active {
+        > a, > a:hover, > a:focus {
+          color: rgba(85, 85, 85, 1);
+          background-color: $cyan;
+        }
+      }
+    }
+    .navbar-toggle {
+      border-color: $cyan;
+      &:hover, &:focus {
+        background-color: $white;
+      }
+      .icon-bar {
+        background-color: $cyan;
+        &:hover, &:focus {
+          .icon-bar {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}

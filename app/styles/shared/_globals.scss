@@ -1,0 +1,126 @@
+body {
+  font-family: $font-roboto;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+}
+
+// Paddings, margins...
+.pt-10 {
+	padding-top: 10px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+// Estilos para Texto
+.text-white {
+	color: white!important;
+}
+
+.text-navy-blue {
+	color: $navy-blue!important;
+}
+
+.text-light {
+  font-weight: $font-weight-light!important;
+}
+
+// Tamaños fuentes
+.text-xs {
+  font-size: $font-size-mini!important;
+}
+
+.text-sm {
+  font-size: $font-size-small!important;
+}
+
+.text-md {
+  font-size: 16px!important;
+}
+
+.text-lg {
+  font-size: $font-size-large!important;
+}
+
+.text-elg {
+  font-size: $font-size-extra-large!important;
+  line-height: 34px;
+}
+
+//backgrounds
+.bg-white {
+  background-color: white!important;
+}
+.bg-navy-blue {
+  background-color: $navy-blue!important;
+}
+
+// Secciones
+section {
+	&.presentation {
+		position: relative;
+		min-height: 600px;
+		background: linear-gradient(rgba(0, 0, 0, .3), transparent), url(../images/home-main-pic.jpg) no-repeat scroll 0px 100% /cover;
+		background-position: center center;
+		padding-top: 100px;
+
+		h1 {
+			letter-spacing: 18px;
+		}
+
+		.rectangle {
+			width: 240px;
+			height: 150px;
+			border-radius: 5px;
+			background-color: black;
+			margin: 0 auto;
+			-webkit-box-shadow: 6px 6px 12px -4px rgba(0,0,0,0.87);
+			-moz-box-shadow: 6px 6px 12px -4px rgba(0,0,0,0.87);
+			box-shadow: 6px 6px 12px -4px rgba(0,0,0,0.87);
+		}
+	}
+
+	&.featured {
+		margin-top: -25px;
+		margin-bottom: 15px;
+		color: $navy-blue;
+		
+		.features {
+			padding: 10px;
+			margin: 10px 0;
+
+			>.feature {
+				display: inline-block;
+				padding: 10px;
+				width: 150px;
+				border-right: 1px solid $bright-gray;
+				&:last-child {
+					border: 0;
+				}
+				p {
+					margin: 0;
+				}
+				@media screen and (min-width: 322px) and (max-width: 475px) {
+					&:nth-child(even) {
+						border: 0;
+					}
+				}
+				@media screen and (max-width: 322px) {
+					border: 0;
+					border-bottom: 1px solid $bright-gray;
+					&:last-child {
+						border: 0;
+					}
+				}
+				>.description {
+					padding: 5px;
+				}
+			}
+		}
+		button {
+			padding: 12px 42px;
+		}
+	}
+}
+
+

@@ -1,0 +1,20 @@
+// Declaracion fuentes
+$font-roboto: "Roboto", "Arial", sans-serif !default;
+
+// Tamaño de fuentes
+$font-size-base: 12px !default;
+$font-size-mini: ceil($font-size-base * 0.675) !default; 
+$font-size-small: ceil($font-size-base * 0.85) !default;
+$font-size-large: ceil($font-size-base * 1.9) !default; 
+$font-size-extra-large: ceil($font-size-base * 3) !default; 
+
+// Grosores de fuentes
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// Anchos pantallas
+$break-small: 320px;
+$break-large: 1200px;

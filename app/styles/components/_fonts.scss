@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?fjelsz');
+  src:  url('../fonts/icomoon.eot?fjelsz#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?fjelsz') format('truetype'),
+    url('../fonts/icomoon.woff?fjelsz') format('woff'),
+    url('../fonts/icomoon.svg?fjelsz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-shopping-bag:before {
+  content: "\e902";
+}
+.icon-aircraft-take-off:before {
+  content: "\e901";
+}
+.icon-world:before {
+  content: "\e900";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
