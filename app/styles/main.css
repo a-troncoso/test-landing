@@ -91,6 +91,15 @@
   margin-top: 3em;
 }
 
+.carousel > .carousel-control {
+  display: none;
+}
+
+.carousel > .carousel-indicators {
+  position: static;
+  margin: 0 auto;
+}
+
 #custom-bootstrap-menu.navbar-default {
   background-color: #fff;
   border-width: 0;
@@ -259,6 +268,72 @@ section.presentation .rectangle {
   background-color: black;
   margin: 0 auto;
   box-shadow: 6px 6px 12px -4px rgba(0, 0, 0, 0.87);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+section.presentation .curves {
+  position: absolute;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.25) transparent transparent transparent;
+  margin: 30px auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+section.presentation .curves.curve-1 {
+  width: 800px;
+  height: 200px;
+}
+
+@media screen and (max-width: 770px) {
+  section.presentation .curves.curve-1 {
+    display: none;
+  }
+}
+
+section.presentation .curves.curve-2 {
+  width: 700px;
+  height: 250px;
+}
+
+@media screen and (max-width: 670px) {
+  section.presentation .curves.curve-2 {
+    display: none;
+  }
+}
+
+section.presentation .curves.curve-3 {
+  width: 500px;
+  height: 250px;
+}
+
+@media screen and (max-width: 510px) {
+  section.presentation .curves.curve-3 {
+    display: none;
+  }
+}
+
+section.presentation .curves.curve-4 {
+  width: 300px;
+  height: 250px;
+}
+
+@media screen and (max-width: 320px) {
+  section.presentation .curves.curve-4 {
+    display: none;
+  }
+}
+
+section.presentation .curves.curve-5 {
+  width: 150px;
+  height: 250px;
 }
 
 section.featured {
@@ -296,6 +371,10 @@ section.featured .features > .feature:last-child {
   section.featured .features > .feature:last-child {
     border: 0;
   }
+}
+
+section.solutions .card {
+  height: 100%;
 }
 
 section.travels .card {

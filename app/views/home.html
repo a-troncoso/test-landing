@@ -1,10 +1,17 @@
+<!-- Primera seccion -->
 <section class="row presentation" >
   <div class="col-md-12">
   	<h1 class="text-white text-light text-center mb-20">BELONG</h1>
-  	<div class="rectangle col-centered"></div>
+  	<div class="rectangle"></div>
+  	<div class="curves curve-1"></div>
+  	<div class="curves curve-2"></div>
+  	<div class="curves curve-3"></div>
+  	<div class="curves curve-4"></div>
+  	<div class="curves curve-5"></div>
   </div>    
 </section>
 
+<!-- Segunda seccion -->
 <section class="row featured">
 	<div class="col-md-8 col-md-offset-2 bg-white text-center">
 		<h2>UN MUNDO DE PRIVILEGIOS</h2>
@@ -43,6 +50,7 @@
 	</div>
 </section>
 
+<!-- Tercera seccion -->
 <section class="row solutions">
 	<div class="col-md-8 col-md-offset-2">
 		<div class="col-md-3 text-center bg-navy-blue text-white card">
@@ -72,28 +80,35 @@
 				<p class="text-md">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend.</p>
 				<button class="btn btn-border btn-white">COMPRE EN CUOTAS</button>
 			</div>
-			<div class="col-md-6 text-center hidden-sm hidden-xs">
-				<div class="slider">
-					<div class="perfect-circle"></div>
-    			<p class="pt-10">HASTA EN <strong>12 CUOTAS</strong> SIN INTERESES</p>
+			<div class="col-md-6 text-center hidden-sm hidden-xs" >
+				<div uib-carousel active="0" interval="5000">
+					<div uib-slide ng-repeat="slide in home.slides.solutions" index="$index">
+						<div class="perfect-circle"></div>
+	    			<p class="pt-10">HASTA EN <strong>{{slide.quota}} CUOTAS</strong> SIN INTERESES</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
+<!-- Cuarta seccion -->
 <section class="row travels pt-20">
 	<div class="col-md-8 col-md-offset-2 text-white">
 		<div class="col-md-8 card" style="background: #dff0d8 url('images/rio.jpg') center center /cover;">
-			<div class="col-md-6">
-				<div>
-					<p>DESTINOS PARA DISFRUTAR</p>
-					<p>JUNTO A TARJETA CLUB MILES</p>
+			<div uib-carousel active="0" interval="5000">
+				<div uib-slide ng-repeat="slide in home.slides.travels" index="$index">
+					<div class="col-md-7 text-left">
+						<div>
+							<p>DESTINOS PARA DISFRUTAR</p>
+							<p>JUNTO A TARJETA CLUB MILES</p>
+						</div>
+						<hr>
+						<h4>{{slide.destination}}</h4>
+						<p>{{slide.desc}}</p>
+						<button class="btn btn-border btn-white">SOLICITAR DINERS CLUB MILES</button>
+					</div>
 				</div>
-				<hr>
-				<h4>RIO DE JANEIRO</h4>
-				<p>Mar, montaña, ríos y lagunas se unieron para crear una geografía variada y hermosa.</p>
-				<button class="btn btn-border btn-white">SOLICITAR DINERS CLUB MILES</button>
 			</div>
 		</div>
 		<div class="col-md-3 col-md-offset-1 text-center card bg-navy-blue">
@@ -111,6 +126,7 @@
 
 <section class="row conclusion pt-30">
 	<div class="col-md-8 col-md-offset-2 card text-center bg-transparent-beige text-navy-blue">
+		<span class="icon-world text-elg"></span>
 		<h3>UN MUNDO DE PRIVILEGIOS PARA USTED</h3>
 		<p>Pagar de manera cómoda y segura, es posible. Y conseguir beneficios exclusivos por sus pagos, también. Con Diners Club tendrá acceso a ofertas especiales, acceso a las Salas VIP de los principales aeropuertos y asistencia en viajes, entre otras muchas ventajas</p>
 		<button class="btn btn-navy-blue btn-lg">ÚNASE AL CLUB</button>

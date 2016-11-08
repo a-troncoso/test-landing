@@ -91,6 +91,10 @@
   margin-top: 3em;
 }
 
+uib-carousel .carousel-control {
+  display: none;
+}
+
 #custom-bootstrap-menu.navbar-default {
   background-color: #fff;
   border-width: 0;
@@ -134,7 +138,6 @@
 }
 
 .footer {
-  height: 250px;
   background-color: #01295C;
   padding: 30px;
 }
@@ -242,11 +245,11 @@ hr {
 }
 
 section.presentation {
+  padding-top: 100px;
   position: relative;
   min-height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(../images/home-main-pic.jpg) no-repeat scroll 0px 100%/cover;
   background-position: center center;
-  padding-top: 100px;
 }
 
 section.presentation h1 {
